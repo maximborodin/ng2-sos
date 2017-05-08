@@ -1,0 +1,10 @@
+<toh-contact [contact]="selectedContact"></toh-contact>
+
+<ul class="contacts">
+  <li *ngFor="let contact of contacts"
+    (click)="onSelect(contact)"
+    [class.selected]="contact===selectedContact"
+  >
+    <span class="badge">{{contact.phone}}</span> {{contact.name}}
+  </li>
+</ul>
