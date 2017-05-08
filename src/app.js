@@ -14,9 +14,9 @@ if (VK !== undefined) {
       console.log('session');
       //alert(response.session.user.id);
       user = response.session.user;
-      var userInfoElement = document.querySelector('.User_info');
-      userInfoElement.innerHTML += user.id + '<br>' + user.first_name + '<br>'
-        + user.last_name;
+      //var userInfoElement = document.querySelector('.User_info');
+      //userInfoElement.innerHTML += user.id + '<br>' + user.first_name + '<br>'
+      //  + user.last_name;
       if (response.settings) {
         /* Выбранные настройки доступа пользователя, если они были запрошены */
         console.log('settings');
