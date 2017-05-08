@@ -1,14 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Ng2Sos</title>
-  <base href="/ng2-sos/">
+  <head>
+    <title>SOS</title>
+    <base href="/ng2-sos/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
-<body>
-  <app-root>Loading...</app-root>
-<script type="text/javascript" src="inline.a035ecaf430ed0ed5064.bundle.js"></script><script type="text/javascript" src="polyfills.2c5f06be1f3e7bd72f5d.bundle.js"></script><script type="text/javascript" src="main.0b3de0fe00a63f7abee7.bundle.js"></script></body>
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+    <script src="//vk.com/js/api/openapi.js?144" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <link href="styles.0162249771af4fc9be60.bundle.css" rel="stylesheet"/></head>
+
+  <body>
+    <div class = "Is_posted">Posted</div>
+    <div id="map"></div>
+    <my-app>Loading AppComponent content here ...</my-app>
+    <input type="button" id="PostButton" value="Сделать пост вк" onClick="postOnTheWall()">
+    <script src="app.js"></script>
+  <script type="text/javascript" src="inline.23f3c9a8e81e040a7ef4.bundle.js"></script><script type="text/javascript" src="polyfills.99279da224a13fd2270d.bundle.js"></script><script type="text/javascript" src="main.a97798d067d2cc3e3837.bundle.js"></script></body>
 </html>
