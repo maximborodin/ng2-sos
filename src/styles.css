@@ -5,9 +5,12 @@ h1 {
 }
 
 .Is_posted {
-  visibility: hidden;
+  visibility: visible;
   background: red;
   color: black;
+  height: 5%;
+  font-size:200%;
+  padding-left:40%;
 }
 
 html, body {
