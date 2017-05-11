@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h1>{{title}}</h1>
-    <toh-contacts></toh-contacts>
+    <app-contacts></app-contacts>
   `,
 })
 export class AppComponent  {
-  title = 'Hello Maxim';
+  title = 'Hello';
 }

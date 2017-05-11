@@ -2,13 +2,13 @@
  * Created by Maxim on 5/8/2017.
  */
 
-import  { Component, Input } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
-import  { Contact } from './contact.model';
+import { Contact } from './contact.model';
 
 @Component({
   moduleId: module.id,
-  selector: 'toh-contact',
+  selector: 'app-contact',
   templateUrl: 'contact.component.html'
 })
 export class ContactComponent {

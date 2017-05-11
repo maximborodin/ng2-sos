@@ -7,7 +7,7 @@ import { Contact } from './contact.model';
 
 @Component({
   moduleId: module.id,
-  selector: 'toh-contacts',
+  selector: 'app-contacts',
   templateUrl: 'contacts.component.html',
   styleUrls: ['contacts.component.css'],
 })
