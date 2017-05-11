@@ -5,7 +5,7 @@ h1 {
 }
 
 .Is_posted {
-  visibility: visible;
+  visibility: hidden;
   background: red;
   color: black;
   height: 5%;
