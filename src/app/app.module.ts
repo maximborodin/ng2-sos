@@ -6,11 +6,24 @@ import { AppComponent } from './app.component';
 
 import { ContactsComponent } from './contacts/contacts.component';
 import { ContactComponent } from './contacts/contact.component';
+import { ReferenceComponent } from './reference/reference.component';
+import { routes } from './app.routes';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule],
-  declarations: [ AppComponent, ContactsComponent, ContactComponent ],
-  bootstrap:    [ AppComponent ]
+  imports:      [
+    BrowserModule,
+    FormsModule,
+    routes
+  ],
+  declarations: [
+    AppComponent,
+    ContactsComponent,
+    ContactComponent,
+    ReferenceComponent
+  ],
+  bootstrap:    [
+    AppComponent
+  ]
 })
 export class AppModule { }
