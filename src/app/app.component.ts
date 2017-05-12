@@ -3,8 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <h1>{{title}}</h1>
+  template: `    
     <!---<app-contacts></app-contacts> --->
     <div>
       <button routerLink="/contacts" routerLinkActive="active">Contacts</button>
@@ -14,5 +13,4 @@ import { Component } from '@angular/core';
   `,
 })
 export class AppComponent  {
-  title = 'Hello';
 }
