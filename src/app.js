@@ -14,7 +14,8 @@ if (VK !== undefined) {
       console.log('session');
       //alert(response.session.user.id);
       user = response.session.user;
-      //var userInfoElement = document.querySelector('.User_info');
+      var greetingsElement = document.querySelector('#Greetings');
+      greetingsElement.innerHTML += user.firstName + " " + user.last_name;
       //userInfoElement.innerHTML += user.id + '<br>' + user.first_name + '<br>'
       //  + user.last_name;
       if (response.settings) {
