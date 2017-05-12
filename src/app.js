@@ -83,7 +83,7 @@ function postOnTheWall() {
     coordinates = coordinatesIP;
   }
   VK.Api.call('wall.post', {friends_only: 0,
-      message:'Я я в опасности.' +
+      message:'Я в опасности.' +
       ' В данный момент нахожусь в указанном месте.',
       lat: coordinates[0],
       long: coordinates[1]},
