@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   template: `
     <h1>{{title}}</h1>
     <!---<app-contacts></app-contacts> --->
-    <nav>
-      <a routerLink="/contacts" routerLinkActive="active">Contacts</a>
-      <a routerLink="/reference" routerLinkActive="active">Reference</a>
-    </nav>
+    <div>
+      <button routerLink="/contacts" routerLinkActive="active">Contacts</button>
+      <button routerLink="/reference" routerLinkActive="active">Reference</button>
+    </div>
     <router-outlet></router-outlet>
   `,
 })
